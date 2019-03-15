@@ -21,4 +21,12 @@ public class Student {
 
     @Getter @Setter
     private Integer age;
+
+    public Student() {
+    }
+
+    public Student(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 }
