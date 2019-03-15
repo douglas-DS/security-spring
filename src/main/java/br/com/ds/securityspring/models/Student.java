@@ -13,7 +13,7 @@ public class Student {
 
     @Getter @Setter
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer studentId;
 
     @Getter @Setter
@@ -21,9 +21,6 @@ public class Student {
 
     @Getter @Setter
     private Integer age;
-
-    public Student() {
-    }
 
     public Student(String name, Integer age) {
         this.name = name;
